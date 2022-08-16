@@ -77,7 +77,14 @@ class login extends CI_Model
     $this->db->update('department');
     return 1;
     }
-
+     
+    public function roles_select()
+    {
+      $this->load->library('session');
+      $entity_id=$this->session->userdata('entity_id');
+      $q1=$this->db->where(['entity_id'=>$entity_id])->get('roles');
+      return $q1->result(); 
+    }
 
 
 

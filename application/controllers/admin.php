@@ -63,6 +63,16 @@
       }
     }
 
+    public function roles_select()
+    {
+        $this->load->model('login');
+        if($data=$this->login->roles_select())
+        {
+          $this->load->view('admin/roles',['data'=>$data]);
+        }
+    }
+    
+
 
   }
 

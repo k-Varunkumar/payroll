@@ -2,6 +2,7 @@
 <br>
 
 
+<!-- ADD DEPARTMENT -->
 
 <div class="card">
   <div class="card-body" style="margin:auto;">
@@ -44,7 +45,7 @@
 
 
 
-
+<!-- DATABASE TABLE -->
 
 <div class="card" style="margin-top:10px;">
   <div class="card-body">
