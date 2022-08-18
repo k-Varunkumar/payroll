@@ -73,7 +73,14 @@
     }
     
 
-
+    public function designation_select()
+    {
+        $this->load->model('login');
+        if($data=$this->login->designation_select())
+        {
+          $this->load->view('admin/designation',['data'=>$data]);
+        }
+    }
   }
 
  ?>
