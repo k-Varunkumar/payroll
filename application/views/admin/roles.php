@@ -27,7 +27,7 @@
       <td><?php echo $data1->is_active;?></td>
       <td><?php echo $data1->	cr_by;?></td>
       <td>
-        <a href="<?php echo site_url('admin/update_page/'.$data1->dept_id);?>" class="btn btn-primary float-center">Edit</a>
+        <a href="<?php echo site_url('admin/update_page/'.$data1->role_id);?>" class="btn btn-primary float-center">Edit</a>
         <a href="#" class="btn btn-danger float-center">Delete</a>
         <!-- <?php echo site_url('admin/update_page/'.$data1->dept_id);?> -->
         <!-- <?php echo site_url('admin/delete/'.$data1->dept_id);?> -->

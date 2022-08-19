@@ -19,7 +19,10 @@
           <a class="nav-link" href="#">Employee</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Department</a>
+          <a class="nav-link" href="<?php echo site_url('admin/_select');?>">Department</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="<?php echo site_url('admin/designation_select');?>">Designation</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Education</a>
@@ -29,7 +32,6 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="<?php echo site_url('admin/roles_select');?>">Roles</a>
-
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Users</a>
