@@ -71,6 +71,50 @@
           $this->load->view('admin/roles',['data'=>$data]);
         }
     }
+
+    public function exp_delete($emp__id)
+    {
+      $this->load->model("login");
+      if($this->login->deleterow($emp_id))
+      {
+        $this->load->model('login');
+        $data=$this->login->select();
+        $this->load->view('admin/employee_experience',['data'=>$data]);
+      }
+    }
+
+
+    public function exp_update_page($emp_id)
+    {
+      $this->load->model("login");
+      if($data5=$this->login->update_page($emp_id))
+      {
+        $this->load->view('admin/update',['data5'=>$data5]);
+      }
+    }
+
+
+    public function exp_update()
+    {
+      $emp_id=$this->input->post('emp_id');
+      $role=$this->input->post('role');
+      $this->load->model("login");
+      if($data5=$this->login->exp_update($emp_id,$role))
+      {
+        $this->load->model('login');
+        $data=$this->login->select();
+        $this->load->view('admin/employee_experience',['data'=>$data]);
+      }
+    }
+
+    public function exp_select()
+    {
+        $this->load->model('login');
+        if($data=$this->login->exp_select())
+        {
+          $this->load->view('admin/employee_experience',['data'=>$data]);
+        }
+    }
     
 
     public function designation_select()
