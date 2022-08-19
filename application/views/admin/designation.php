@@ -63,15 +63,15 @@
     </tr>
   </thead>
   <tbody>
-<?php foreach ($data as $data1):?>
+<?php foreach ($data1 as $data2):?>
     <tr>
-      <th scope="row"><?php echo $data1->dept_id;?></th>
-      <td><?php echo $data1->dept_name;?></td>
-      <td><?php echo $data1->is_active;?></td>
-      <td><?php echo $data1->	cr_by;?></td>
+      <th scope="row"><?php echo $data2->desg_id;?></th>
+      <td><?php echo $data2->desg_name;?></td>
+      <td><?php echo $data2->is_active;?></td>
+      <td><?php echo $data2->	cr_by;?></td>
       <td>
-        <a href="<?php echo site_url('admin/update_page/'.$data1->dept_id);?>" class="btn btn-primary float-center">Edit</a>
-        <a href="<?php echo site_url('admin/delete/'.$data1->dept_id);?>" class="btn btn-danger float-center">Delete</a>
+        <a href="<?php echo site_url('admin/update_page/'.$data2->desg_id);?>" class="btn btn-primary float-center">Edit</a>
+        <a href="<?php echo site_url('admin/delete/'.$data2->desg_id);?>" class="btn btn-danger float-center">Delete</a>
       </td>
     </tr>
   <?php endforeach;?>
@@ -83,4 +83,4 @@
   </div>
 </div>
 
-<?phpinclude('footer.php');?>
+<?php include('footer.php');?>

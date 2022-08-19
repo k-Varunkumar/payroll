@@ -90,8 +90,8 @@ class login extends CI_Model
     {
       $this->load->library('session');
       $entity_id=$this->session->userdata('entity_id');
-      $q1=$this->db->where(['entity_id'=>$entity_id])->get('designation');
-      return $q1->result(); 
+      $q2=$this->db->where(['entity_id'=>$entity_id])->get('designation');
+      return $q2->result(); 
     }
 
 

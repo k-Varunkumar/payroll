@@ -120,9 +120,9 @@
     public function designation_select()
     {
         $this->load->model('login');
-        if($data=$this->login->designation_select())
+        if($data1=$this->login->designation_select())
         {
-          $this->load->view('admin/designation',['data'=>$data]);
+          $this->load->view('admin/designation',['data'=>$data1]);
         }
     }
   }
