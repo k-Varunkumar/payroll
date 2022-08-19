@@ -77,7 +77,7 @@ class login extends CI_Model
     $this->db->update('department');
     return 1;
     }
-     
+
     public function roles_select()
     {
       $this->load->library('session');

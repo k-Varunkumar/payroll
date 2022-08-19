@@ -25,7 +25,7 @@
           <a class="nav-link" href="#">Education</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Experience</a>
+          <a class="nav-link" href="<?php echo site_url('admin/exp_select');?>">Experience</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="<?php echo site_url('admin/roles_select');?>">Roles</a>
