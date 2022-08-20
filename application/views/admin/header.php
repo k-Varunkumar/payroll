@@ -16,7 +16,7 @@
           <a class="nav-link" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Employee</a>
+          <a class="nav-link" href="<?php echo site_url('admin/emp_select');?>">Employee</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="<?php echo site_url('admin/_select');?>">Department</a>

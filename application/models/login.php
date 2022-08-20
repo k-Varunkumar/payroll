@@ -102,5 +102,13 @@ class login extends CI_Model
       $q1=$this->db->where(['entity_id'=>$entity_id])->get('employee_experience');
       return $q1->result(); 
     }
+
+    public function emp_select()
+    {
+      $this->load->library('session');
+      $entity_id=$this->session->userdata('entity_id');
+      $q10=$this->db->where(['entity_id'=>$entity_id])->get('employee');
+      return $q10->result(); 
+    }
 }
  ?>

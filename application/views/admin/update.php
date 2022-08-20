@@ -4,6 +4,7 @@
 <div class="card">
   <div class="card-body" style="margin:auto;">
     <h1>Edit department</h1>
+    <br><br>
       <?php echo form_open('admin/update'); ?>
       <?php foreach ($data5 as $data5):?>
       <div class="form-outline mb-4">
@@ -16,7 +17,7 @@
         <?php endforeach;?>
         <br>
         <div class="form-outline mb-4">
-      <?php echo form_submit(['class'=>'btn btn-primary btn-block mb-4 ','type'=>'submit','value'=>'UPDATE','style'=>'width:80px;']);?>
+      <?php echo form_submit(['class'=>'btn btn-primary btn-block mb-4 ','type'=>'submit','value'=>'UPDATE','style'=>'width:100px;margin:auto;']);?>
       </div>
     </div>
   </div>

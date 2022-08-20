@@ -125,6 +125,15 @@
           $this->load->view('admin/designation',['data'=>$data1]);
         }
     }
+    public function emp_select()
+    {
+        $this->load->model('login');
+        if($data=$this->login->emp_select())
+        {
+          $this->load->view('admin/employee_details',['data'=>$data]);
+        }
+    }
+
   }
 
  ?>
